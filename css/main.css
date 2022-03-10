@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'poppins';
+  font-family: "poppins";
   margin: 0;
   padding: 0;
   background: #f2f2f2;
@@ -24,29 +24,22 @@ a {
   background: white;
   padding: 1em;
 }
-
 .navigation .logo {
   font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
   color: var(--primary-color);
 }
-
 .navigation .logo span {
   color: black;
 }
-
 .navigation .menu-btn {
   cursor: pointer;
 }
-
 .navigation .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   place-content: space-between;
 }
-
 .navigation nav {
   display: none;
 }
@@ -63,35 +56,31 @@ section {
   text-transform: uppercase;
   font-weight: bold;
   color: grey;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
 }
-
 .hero-left h1 {
   font-weight: bold;
   color: black;
   font-size: 2.5rem;
   line-height: 1.3em;
-  margin-top: .2em;
+  margin-top: 0.2em;
 }
-
 .hero-left .primary-cta {
   background: var(--primary-color);
   text-decoration: none;
   color: white;
-  padding: .6em 1.3em;
+  padding: 0.6em 1.3em;
   font-weight: bold;
   font-size: 1.4rem;
   border-radius: 5em;
   display: inline-block;
 }
-
 .hero-left .video-cta {
   display: block;
   margin-top: 1em;
 }
-
 .hero-left .video-cta img {
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 .hero-img {
@@ -103,23 +92,19 @@ section {
   background: #20272e;
   color: white;
 }
-
 .features ul {
   margin: 0;
-  padding-left: .1em;
+  padding-left: 0.1em;
   font-size: 1.1rem;
-  display: -ms-grid;
   display: grid;
 }
-
 .features ul li {
   margin-bottom: 1em;
   margin-left: 2em;
   position: relative;
 }
-
 .features ul li:before {
-  content: '';
+  content: "";
   position: absolute;
   left: -2em;
   width: 20px;
@@ -127,7 +112,6 @@ section {
   background-image: url("../images/bullet.svg");
   background-size: contain;
 }
-
 .features img {
   display: none;
 }
@@ -135,7 +119,6 @@ section {
 .testimony {
   background: var(--primary-color);
 }
-
 .testimony ul li {
   background: #006bd6;
   text-align: center;
@@ -145,7 +128,6 @@ section {
   border-radius: 1em;
   color: white;
 }
-
 .testimony ul li img {
   width: 5em;
   height: 5em;
@@ -161,17 +143,16 @@ h2 {
 label {
   display: block;
   font-size: 1.2em;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 input, textarea {
   width: 100%;
-  padding: .8em;
+  padding: 0.8em;
   margin-bottom: 1em;
-  border-radius: .3em;
+  border-radius: 0.3em;
   border: 1px solid gray;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .submit-cta {
@@ -182,7 +163,7 @@ input, textarea {
   border-radius: 5em;
   margin-bottom: 5em;
   width: unset;
-  padding: .8em 2em;
+  padding: 0.8em 2em;
   cursor: pointer;
   display: inline-block;
 }
@@ -206,27 +187,23 @@ nav {
   height: 100vh;
   padding: 1em;
 }
-
 nav ul.nav-left {
   margin-top: 5em;
 }
-
 nav li a {
   color: white;
   text-decoration: none;
   display: block;
-  padding: .5em;
+  padding: 0.5em;
   font-size: 1.4em;
   text-align: right;
 }
-
 nav li a:hover {
   font-weight: bold;
 }
-
 nav .menu-exit {
   float: right;
-  margin: .5em;
+  margin: 0.5em;
   cursor: pointer;
 }
 
@@ -234,5 +211,4 @@ nav .menu-exit {
   .menu-btn {
     display: none;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
