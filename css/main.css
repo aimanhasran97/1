@@ -97,6 +97,7 @@ section {
   padding-left: 0.1em;
   font-size: 1.1rem;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
 .features ul li {
   margin-bottom: 1em;
@@ -208,7 +209,149 @@ nav .menu-exit {
 }
 
 @media only screen and (min-width: 768px) {
-  .menu-btn {
+  .menu-btn, .menu-exit {
     display: none;
+  }
+
+  .navigation .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+    justify-content: unset;
+  }
+
+  .navigation nav {
+    display: flex;
+    background: none;
+    justify-content: space-between;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navigation nav ul {
+    display: flex;
+  }
+  .navigation nav a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+  .navigation nav .nav-left {
+    margin: 0;
+  }
+  .navigation nav .bold-home {
+    font-weight: bold;
+  }
+  .navigation nav .blue-go-premium a {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    border-radius: 5em;
+    font-weight: bold;
+    margin-top: -0.2em;
+  }
+  .navigation nav .blue-go-premium a:hover {
+    background: var(--primary-color);
+    color: white;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+
+  section {
+    padding: 10em 4em;
+  }
+
+  .hero .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .hero .container .hero-left {
+    margin: 3em 3em 0 5em;
+  }
+  .hero .container .hero-left h1 {
+    font-size: 3em;
+    width: 90%;
+  }
+  .hero .container .hero-img {
+    margin-right: 8em;
+    width: 80%;
+  }
+
+  .hero-cta {
+    display: flex;
+  }
+  .hero-cta .primary-cta {
+    margin-right: 1em;
+  }
+
+  .features ul {
+    display: block;
+    margin-left: 5em;
+  }
+  .features ul li {
+    font-size: 1.4em;
+  }
+  .features ul li:before {
+    width: 30px;
+    height: 30px;
+  }
+
+  .features {
+    position: relative;
+  }
+  .features img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 350px;
+    bottom: -2em;
+  }
+
+  .testimony ul {
+    display: flex;
+  }
+  .testimony ul li {
+    margin: 0 1em;
+  }
+
+  .contact {
+    position: relative;
+  }
+  .contact .container {
+    display: flex;
+  }
+  .contact .right-contact {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+  }
+  .contact .right-contact iframe {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1370px) {
+  .features:before {
+    content: "";
+    width: 10%;
+    height: 20em;
+    background: var(--primary-color);
+    left: 0;
+    top: -4em;
+    position: absolute;
+  }
+  .features:after {
+    content: "";
+    width: 200px;
+    height: 20em;
+    background: url(../images/dots.svg) no-repeat;
+    left: 4.5em;
+    top: 2em;
+    position: absolute;
   }
 }/*# sourceMappingURL=main.css.map */
